@@ -1,0 +1,31 @@
+
+Assets Alert - Privacy Policy
+
+Effective Date: [Insert Date Here]
+
+Assets Alert does not collect, store, or transmit any personally identifiable information.
+
+What We Do:
+- Monitor public cryptocurrency and stock prices via public APIs (e.g., Yahoo Finance).
+- Allow users to set alerts based on price thresholds.
+- Allow users to upload and use custom sounds stored locally on their device.
+- Track visual NFTs on-device for display purposes only.
+
+What We Don’t Do:
+- We do NOT collect personal data.
+- We do NOT track user behavior or location.
+- We do NOT share or sell any information to third parties.
+
+Local Storage:
+All user preferences (e.g., alerts, themes, uploaded sounds) are stored only on the device using localStorage.
+
+Third-Party Services:
+The app may query public price APIs (e.g., Yahoo Finance) to fetch market data. No user data is sent in these requests.
+
+Children's Privacy:
+Assets Alert is not intended for children under the age of 13.
+
+Contact:
+If you have any questions or concerns, you may reach us at: [Insert Contact Email]
+
+This privacy policy may be updated occasionally. Continued use of the app after changes indicates agreement to the updated terms.
