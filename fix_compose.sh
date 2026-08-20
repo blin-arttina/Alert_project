@@ -1,3 +1,19 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# Fixes the Compose compiler plugin error. Run from inside Alert_project:
+#   bash fix_compose.sh
+set -e
+echo "Applying Compose compiler fix..."
+
+cat > "build.gradle.kts" << 'FILEEOF'
+plugins {
+    id("com.android.application") version "8.5.2" apply false
+    id("org.jetbrains.kotlin.android") version "1.9.24" apply false
+    id("com.google.devtools.ksp") version "1.9.24-1.0.20" apply false
+}
+FILEEOF
+echo "  wrote build.gradle.kts"
+
+cat > "app/build.gradle.kts" << 'FILEEOF'
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -73,3 +89,11 @@ dependencies {
 
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
+FILEEOF
+echo "  wrote app/build.gradle.kts"
+
+echo ""
+echo "Done. Now run:"
+echo "  git add -A"
+echo "  git commit -m \"Fix Compose compiler plugin version\""
+echo "  git push"
