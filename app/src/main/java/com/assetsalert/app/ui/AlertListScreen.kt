@@ -95,4 +95,4 @@ private fun AlertRow(alert: Alert, onToggle: () -> Unit, onDelete: () -> Unit, o
 
 // small helper to avoid pulling in extra imports for a single clickable text
 private fun Modifier.clickableText(onClick: () -> Unit): Modifier =
-    this.then(androidx.compose.foundation.clickable(onClick = onClick))
+    this.clickable(onClick = onClick)
